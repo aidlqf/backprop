@@ -6,7 +6,7 @@
 
 import React, { Component } from "react";
 import ReactGa from "react-ga";
-import { createMuiTheme, ThemeProvider, Divider, Box } from "@material-ui/core";
+import { createMuiTheme, ThemeProvider, Box } from "@material-ui/core";
 import {
 	BackpropExplainer,
 	Article,
