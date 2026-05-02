@@ -8,8 +8,6 @@ import React, { Component } from "react";
 import ContourLoss from "./ContourLoss";
 import { ScatterPlot } from "../../exports";
 import { $ } from "../article/Typeset";
-import * as d3 from "d3";
-import autoKeySVG from "./assets/autoKey.svg";
 
 import {
 	Fab,
@@ -195,7 +193,6 @@ class SubTool extends Component {
 		const { m, b } = this.state.linreg.tunableparams;
 		const { loss, speed, epochs } = this.state.linreg.hyperparams;
 		const { data } = this.state.linreg;
-		const nullColor = (val) => (val === null ? "#dce0dd" : "black");
 		const nullNumber = (num, precision) =>
 			num === null ? num : num.toFixed(precision);
 		return (
