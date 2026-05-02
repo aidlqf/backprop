@@ -116,7 +116,7 @@ class ContourLoss extends Component {
 	async componentDidMount() {
 		const { width, height } = await this.state;
 		const svg = d3.select("#divContour").select("#contour");
-		const { data, darkness } = await this.props;
+		const { darkness } = await this.props;
 		let n = width,
 			m = height,
 			values = new Array(n * m);
